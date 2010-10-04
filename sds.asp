@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<script type="text/javascript" language="Javascript"> 
-<!-- Begin 
-document.oncontextmenu = function(){return false} 
-// End --> 
-</script>
+
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="sds.css"/>
+	<script type="text/javascript" src="sds.js"></script>
 <title>SDS - Digital</title>
 </head>
 <body>
-<form action="sds.asp" method="post" name="frm">
+<form action="sds.asp" method="post" name="frm" id= "frm">
 <table class="tablebody">
 	<tr>
 		<td><table cellpadding="0" cellspacing="0">
@@ -35,22 +32,30 @@ document.oncontextmenu = function(){return false}
 				<td class="tdimgs"><img src="imgs/corner_4.png"/></td>
 			</tr>	
 		</table></td>
-	Datos del Cliente y Datos para Facturar
 	<tr>
-		<td><table cellpadding="0" cellspacing="0">
+		<td><table border= "0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td class="tdimgs"><img src="imgs/corner_1.png"/></td>
-				<td colspan="7" background="imgs/top.png">&nbsp;</td>
+				<td colspan="10" background="imgs/top.png">&nbsp;</td>
 				<td class="tdimgs"><img src="imgs/corner_2.png"/></td>
 			</tr>
 			<tr>
-				<td width="30" rowspan="16" background="imgs/left.png">&nbsp;</td>
+				<td width="30" rowspan="17" background="imgs/left.png">&nbsp;</td>
 				<!--td height="47" colspan="6" class="style3"><div align="center"><img src="imgs/datos.png" width="670" height="80" /></div></td-->
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				<td width="30" rowspan="16" background="imgs/rigth.png">&nbsp;</td>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				<td width="30" rowspan="17" background="imgs/rigth.png">&nbsp;</td>
 			</tr>
 			<tr>
-				<td></td><td></td><td></td>
+				<td class="tdtitulo1" colspan="3"><div align="center"></div>DATOS DEL CLIENTE</td>
+				
+				<td class="tdtitulo2" colspan="2"><div align="center"></div>DATOS PARA FACTURAR </td>
+				<td><img width="60" src="imgs/auto.jpg"/> </td>
+				
+			</tr>
+			<tr>
+				<td width="20%" bgcolor="#FFFFFF">&nbsp;</td>
+				<td width="1%">&nbsp;</td>
+				<td width="24%">&nbsp;</td>
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Mismo </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
@@ -61,7 +66,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Tcliente" class="style4" id="Tcliente" tabindex="TC">
+				<select style="width:75.5%;" name="Tcliente" class="style3" id="Tcliente" tabindex="TC">
 				<option>PERSONA F&Iacute;SICA</option>
 				<option>PERSONA MORAL</option>
 				</select>
@@ -72,7 +77,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Tcliente2" class="style4" id="Tcliente2" tabindex="TC2">
+				<select style="width:75.5%;" name="Tcliente2" class="style3" id="Tcliente2" tabindex="TC2">
 					<option selected>PERSONA F&Iacute;SICA</option>
 					<option selected>PERSONA MORAL</option>
 				</select>
@@ -157,7 +162,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Deleg" class="style4" id="Deleg" tabindex="deleg">
+				<select style="width:65.5%;" name="Deleg" class="style3" id="Deleg" tabindex="deleg">
 					<option value="0000000129">ACAMBARO</option>
 					<option value="0000000021">ACAMBAY</option>
 					<option value="0000000124">ACAPULCO</option>
@@ -331,7 +336,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Deleg2" class="style4" id="Deleg2" tabindex="deleg2">
+				<select style="width:65.5%;" name="Deleg2" class="style3" id="Deleg2" tabindex="deleg2">
 					<option value="0000000129">ACAMBARO</option>
 					<option value="0000000021">ACAMBAY</option>
 					<option value="0000000124">ACAPULCO</option>
@@ -507,7 +512,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Edo" class="style4" id="Edo" tabindex="edo">
+				<select style="width:65.5%;" name="Edo" class="style3" id="Edo" tabindex="edo">
 					<option value="16">AGUASCALIENTES</option>
 					<option value="14">COAHUILA</option>
 					<option value="15">COLIMA</option>
@@ -539,7 +544,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Edo2" class="style4" id="Edo2" tabindex="edo2">
+				<select style="width:65.5%;" name="Edo2" class="style3" id="Edo2" tabindex="edo2">
 					<option value="16">AGUASCALIENTES</option>
 					<option value="14">COAHUILA</option>
 					<option value="15">COLIMA</option>
@@ -571,7 +576,7 @@ document.oncontextmenu = function(){return false}
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Teléfono 1 </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="Tel1" type="text" id="Tel1" tabindex="tel1" onchange="ControlaTel(this.value)"/>
+					<input name="Tel1" type="text" id="Tel1" tabindex="tel1"/>
 				</div></td>
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Teléfono 1 </div></td>
 				<td width="1%"><div align="center">:</div></td>
@@ -580,12 +585,12 @@ document.oncontextmenu = function(){return false}
 				</div></td>
 			</tr>
 			<tr>
-				<td class="tdcampo"><div align="left">Teléfono 2</div></td>
+				<td class="tdcampo"><div align="left">&nbsp; Teléfono 2 </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 					<input name="Tel2" type="text" id="Tel2" tabindex="tel2" onchange="ControlaTel(this.value)" />
 				</div></td>
-				<td class="tdcampo"><div align="left">Teléfono 2</div></td>
+				<td class="tdcampo"><div align="left">&nbsp; Teléfono 2 </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 					<input name="Telef2" type="text" id="Telef2" tabindex="telef2" onchange="ControlaTel(this.value)" />
@@ -624,7 +629,7 @@ document.oncontextmenu = function(){return false}
 			
 			<tr>
 				<td class="tdimgs"><div align="right"><img src="imgs/corner_3.png"/></div></td>
-				<td colspan="7" background="imgs/foot.png">&nbsp;</td>
+				<td colspan="10" background="imgs/foot.png">&nbsp;</td>
 				<td class="tdimgs"><img src="imgs/corner_4.png"/></td>
 			</tr>
 		</tr>
@@ -648,17 +653,17 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Actv" class="style4" id="Actv" tabindex="actv">
+				<select style="width:65.5%;" name="Actv" class="style3" id="Actv" tabindex="actv">
 					<option value="16">PARTICULAR</option>
 					<option value="14">TRANSPORTE DE CARGA</option>
 					<option value="15">TRANSPORTE PUBLICO</option>
 				</select>
 				</div></td>
-				<td class="tdcampo"><div align="left">Tipo de Servicio</div></td>
+				<td class="tdcampo"><div align="left"><span class="style2">*</span>Tipo de Servicio</div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="TipoServ" class="style3" id="TipoServ" tabindex="tiposerv">
+				<select style="width:65.5%;" name="TipoServ" class="style3" id="TipoServ" tabindex="tiposerv">
 					<option value="16">RF</option>
 					<option value="14">GPS</option>             
 				</select>
@@ -671,11 +676,11 @@ document.oncontextmenu = function(){return false}
 				<td width="24%"><div align="justify">
 					<input name="Marca" type="text" id="Marca" tabindex="marca" />
 				</div></td>
-				<td class="tdcampo"><div align="left">Dispositivo Instalado en</div></td>
+				<td class="tdcampo"><div align="left"><span class="style2">*</span>Dispositivo Instalado en</div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="DispInst" class="style3" id="DispInst" tabindex="380">
+				<select style="width:65.5%;" name="DispInst" class="style3" id="DispInst" tabindex="dispinst">
 					<option value="16">PROPIEDAD</option>
 					<option value="14">COMODATO</option>             
 				</select>
@@ -689,11 +694,11 @@ document.oncontextmenu = function(){return false}
 					<input name="Modelo" type="text" id="Modelo" tabindex="modelo" />
 				</div></td>
 
-				<td class="tdcampo"><div align="left"> Duración de Servicio (meses)</div></td>
+				<td class="tdcampo"><div align="left"><span class="style2">*</span> Duración de Servicio (meses)</div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="DurServ" class="style3" id="DurServ" tabindex="durserv">
+				<select style="width:65.5%;" name="DurServ" class="style3" id="DurServ" tabindex="durserv">
 					<option value="16">12</option>
 					<option value="14">24</option>
 					<option value="14">36</option> 
@@ -733,7 +738,7 @@ document.oncontextmenu = function(){return false}
 				<td width="24%"><div align="justify">
 					<input name="Placas" type="text" id="Placas" tabindex="placas" />
 				</div></td>
-				<td class="tdcampo"><div align="left">Instalaci&oacute;n</div></td>
+				<td class="tdcampo"><div align="left"><span class="style2">*</span>Instalaci&oacute;n</div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 					<input name="Inst" type="text" id="Inst" tabindex="inst" />
@@ -805,7 +810,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Origen" class="style4" id="Origen" tabindex="origen">
+				<select style="width:65.5%;" name="Origen" class="style3" id="Origen" tabindex="origen">
 					<option value="16">DIRECTA</option>
 					<option value="14">AGENCIA</option>
 				</select>
@@ -814,7 +819,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="Forma" class="style4" id="Forma" tabindex="forma">
+				<select style="width:65.5%;" name="Forma" class="style3" id="Forma" tabindex="forma">
 					<option value="16">AGENCIA</option>
 					<option value="14">CONTADO</option>
 					<option value="16">TDC</option>
@@ -836,12 +841,12 @@ document.oncontextmenu = function(){return false}
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Nombre de la Agencia </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="NombAgen" type="text" id="NomAgen" tabindex="440"/>
+					<input name="NombAgen" type="text" id="NomAgen" tabindex="nomagen"/>
 				</div></td>
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Banco Emisor </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="BancEmisor" type="text" id="BancEmisor" tabindex="490"/>
+					<input name="BancEmisor" type="text" id="BancEmisor" tabindex="bancemisor"/>
 				</div></td>
 			</tr>
 			<tr>
@@ -853,14 +858,14 @@ document.oncontextmenu = function(){return false}
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> N&uacute;mero de Tarjeta </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="NumTarjeta" type="text" id="NumTarjeta" tabindex="numtarjeta"/>
+					<input name="NoTarjeta" type="text" id="NoTarjeta" tabindex="notarjta"/>
 				</div></td>
 			</tr>
 			<tr>
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Nombre del Vendedor </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="NomVendedor" type="text" id="NomVendedor" tabindex="460" OnChange="ControlaValorNum(this.value)"/>
+					<input name="NomVendedor" type="text" id="NomVendedor" tabindex="nomvend" OnChange="ControlaValorNum(this.value)"/>
 				</div></td>
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Vencimiento </div></td>
 				<td width="1%"><div align="center">:</div></td>
@@ -904,7 +909,7 @@ document.oncontextmenu = function(){return false}
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
 				<label>
-				<select name="DomicInst" class="style4" id="DomicInst" tabindex="dominst">
+				<select style="width:65.5%;" name="DomicInst" class="style3" id="DomicInst" tabindex="dominst">
 					<option value="16">AGENCIA</option>
 					<option value="14">CLIENTE</option>
 					<option value="14">OTRO</option>
@@ -913,7 +918,7 @@ document.oncontextmenu = function(){return false}
 				<td class="tdcampo"><div align="left"><span class="style2">*</span> Domicilio </div></td>
 				<td width="1%"><div align="center">:</div></td>
 				<td width="24%"><div align="justify">
-					<input name="Domicilio" type="text" id="Domicilio" tabindex="domicilio"/>
+					<input name="Domicilio" type="text" id="Domicilio" tabindex="domicilio" />
 				</div></td>
 			</tr>
 			<tr>
@@ -958,9 +963,9 @@ document.oncontextmenu = function(){return false}
 		<td><table cellpadding="0" cellspacing="0">
 			<tr>
 				<td bgcolor="#CCCCCC"><div align="center">
-					<input name="Guardar" type="button" id="Guardar" tabindex="900" value="Enviar" accesskey="G" onclick="xGuardar()"/>
-					<input name="Limipar" type="button" id="Limipar" tabindex="910" value="Limpiar" accesskey="L" onclick="xLimpiar()"/>
-					<input name="Salir" type="button" id="Salir" tabindex="920" value="Salir" accesskey="S" onclick="xSalir()"/>
+					<input name="Enviar" type="button" id="Enviar" tabindex="enviar" value="Enviar" accesskey="E" onclick='checaCampos()'/>
+					<input name="Limpiar" type="button" id="Limpiar" tabindex="limpiar" value="Limpiar" accesskey="L" onclick="Borrar()"/>
+					<input name="Salir" type="button" id="Exit" tabindex="salir" value="Salir" accesskey="S" onclick="ExitForm()"/>
 				</div></td>
 			</tr>
 	</tr>
