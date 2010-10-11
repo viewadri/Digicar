@@ -1,0 +1,17 @@
+.errorField {
+background-color: #990000;
+color: white;
+}
+.errorFieldDemo2 {
+background-color: #ffffcc;
+color: #990000;
+}
+.errorFieldDemo5 {
+background-color: #ffffcc;
+border: 1px solid #aa0000;
+color: #aa0000;
+}
+.errorFieldDemo6 {
+background-color: green;
+color: #yellow;
+}
