@@ -33,7 +33,7 @@
     rules:                [],
     displayType:          "alert-all",
     errorFieldClass:      null,
-    errorTextIntro:       "Please fix the following error(s) and resubmit:",
+    errorTextIntro:       "Los siguiente campos son requeridos para continuar:",
     errorJSItemBullet:    "* ",
     errorHTMLItemBullet:  "&bull; ",
     errorTargetElementId: "rsvErrors",
